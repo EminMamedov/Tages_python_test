@@ -1,0 +1,208 @@
+
+-----
+Test: tests/test_user.py::Test_create_user::test_create_new_user (call)
+Time: 2024-03-08 22:19:30.927485
+Request method: POST
+Request URL: https://petstore.swagger.io/v2/user
+
+Response code: 200
+Response text: {"code":200,"type":"unknown","message":"99"}
+Response headers: {'Date': 'Fri, 08 Mar 2024 19:19:31 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT', 'Access-Control-Allow-Headers': 'Content-Type, api_key, Authorization', 'Server': 'Jetty(9.2.9.v20150224)'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_user.py::Test_create_user::test_create_new_user (call)
+Time: 2024-03-08 22:19:31.533538
+Request method: GET
+Request URL: https://petstore.swagger.io/v2/user/Elvis
+
+Response code: 200
+Response text: {"id":99,"username":"Elvis","firstName":"Elvis","lastName":"Presli","email":"test@mail.ru","password":"test123","phone":"999999","userStatus":99}
+Response headers: {'Date': 'Fri, 08 Mar 2024 19:19:32 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT', 'Access-Control-Allow-Headers': 'Content-Type, api_key, Authorization', 'Server': 'Jetty(9.2.9.v20150224)'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_user.py::Test_create_user::test_create_new_user (call)
+Time: 2024-03-08 22:19:32.140570
+Request method: DELETE
+Request URL: https://petstore.swagger.io/v2/user/Elvis
+
+Response code: 200
+Response text: {"code":200,"type":"unknown","message":"Elvis"}
+Response headers: {'Date': 'Fri, 08 Mar 2024 19:19:33 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT', 'Access-Control-Allow-Headers': 'Content-Type, api_key, Authorization', 'Server': 'Jetty(9.2.9.v20150224)'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_user.py::Test_create_user::test_create_new_user (call)
+Time: 2024-03-08 22:19:32.738268
+Request method: GET
+Request URL: https://petstore.swagger.io/v2/user/Elvis
+
+Response code: 404
+Response text: {"code":1,"type":"error","message":"User not found"}
+Response headers: {'Date': 'Fri, 08 Mar 2024 19:19:33 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT', 'Access-Control-Allow-Headers': 'Content-Type, api_key, Authorization', 'Server': 'Jetty(9.2.9.v20150224)'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_user_negativity.py::Test_create_user_negativity::test_create_new_user_negativ (call)
+Time: 2024-03-08 22:19:33.351817
+Request method: POST
+Request URL: https://petstore.swagger.io/v2/user
+
+Response code: 200
+Response text: {"code":200,"type":"unknown","message":"0"}
+Response headers: {'Date': 'Fri, 08 Mar 2024 19:19:34 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT', 'Access-Control-Allow-Headers': 'Content-Type, api_key, Authorization', 'Server': 'Jetty(9.2.9.v20150224)'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_user_negativity.py::Test_create_user_negativity::test_create_new_user_negativ (call)
+Time: 2024-03-08 22:19:33.885999
+Request method: POST
+Request URL: https://petstore.swagger.io/v2/user
+
+Response code: 200
+Response text: {"code":200,"type":"unknown","message":"99"}
+Response headers: {'Date': 'Fri, 08 Mar 2024 19:19:34 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT', 'Access-Control-Allow-Headers': 'Content-Type, api_key, Authorization', 'Server': 'Jetty(9.2.9.v20150224)'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_user_negativity.py::Test_create_user_negativity::test_create_new_user_negativ (call)
+Time: 2024-03-08 22:19:34.432845
+Request method: POST
+Request URL: https://petstore.swagger.io/v2/user
+
+Response code: 200
+Response text: {"code":200,"type":"unknown","message":"9223372036854775807"}
+Response headers: {'Date': 'Fri, 08 Mar 2024 19:19:35 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT', 'Access-Control-Allow-Headers': 'Content-Type, api_key, Authorization', 'Server': 'Jetty(9.2.9.v20150224)'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_user_negativity.py::Test_create_user_negativity::test_create_new_user_negativ (call)
+Time: 2024-03-08 22:19:35.031748
+Request method: GET
+Request URL: https://petstore.swagger.io/v2/user/Elvis28379712494239729
+
+Response code: 404
+Response text: {"code":1,"type":"error","message":"User not found"}
+Response headers: {'Date': 'Fri, 08 Mar 2024 19:19:35 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT', 'Access-Control-Allow-Headers': 'Content-Type, api_key, Authorization', 'Server': 'Jetty(9.2.9.v20150224)'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_user_negativity.py::Test_create_user_negativity::test_create_new_user_negativ (call)
+Time: 2024-03-08 22:19:35.629519
+Request method: GET
+Request URL: https://petstore.swagger.io/v2/user
+
+Response code: 405
+Response text: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><type>unknown</type></apiResponse>
+Response headers: {'Date': 'Fri, 08 Mar 2024 19:19:36 GMT', 'Content-Type': 'application/xml', 'Content-Length': '102', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT', 'Access-Control-Allow-Headers': 'Content-Type, api_key, Authorization', 'Server': 'Jetty(9.2.9.v20150224)'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_user_negativity.py::Test_create_user_negativity::test_create_new_user_negativ (call)
+Time: 2024-03-08 22:19:36.166606
+Request method: GET_NEGATIV
+Request URL: https://petstore.swagger.io/v2/user/Elvis28379712494239729
+
+Response code: 404
+Response text: {"code":1,"type":"error","message":"User not found"}
+Response headers: {'Date': 'Fri, 08 Mar 2024 19:19:37 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT', 'Access-Control-Allow-Headers': 'Content-Type, api_key, Authorization', 'Server': 'Jetty(9.2.9.v20150224)'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_user_negativity.py::Test_create_user_negativity::test_create_new_user_negativ (call)
+Time: 2024-03-08 22:19:36.703315
+Request method: DELETE
+Request URL: https://petstore.swagger.io/v2/user/Elweokfnvowenfknwekoewvbokwnbokp
+
+Response code: 404
+Response text: 
+Response headers: {'Date': 'Fri, 08 Mar 2024 19:19:37 GMT', 'Content-Length': '0', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT', 'Access-Control-Allow-Headers': 'Content-Type, api_key, Authorization', 'Server': 'Jetty(9.2.9.v20150224)'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_user_negativity.py::Test_create_user_negativity::test_create_new_user_negativ (call)
+Time: 2024-03-08 22:19:37.298317
+Request method: DELETE
+Request URL: https://petstore.swagger.io/v2/user/Elvis
+
+Response code: 200
+Response text: {"code":200,"type":"unknown","message":"Elvis"}
+Response headers: {'Date': 'Fri, 08 Mar 2024 19:19:38 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT', 'Access-Control-Allow-Headers': 'Content-Type, api_key, Authorization', 'Server': 'Jetty(9.2.9.v20150224)'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_pet.py::Test_create_pet::test_create_new_pet (call)
+Time: 2024-03-08 22:19:37.851235
+Request method: POST
+Request URL: https://petstore.swagger.io/v2/pet
+
+Response code: 200
+Response text: {"id":99,"category":{"id":99,"name":"Elvis"},"name":"doggie","photoUrls":["null"],"tags":[{"id":78,"name":"Armi"}],"status":"available"}
+Response headers: {'Date': 'Fri, 08 Mar 2024 19:19:38 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT', 'Access-Control-Allow-Headers': 'Content-Type, api_key, Authorization', 'Server': 'Jetty(9.2.9.v20150224)'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_pet.py::Test_create_pet::test_create_new_pet (call)
+Time: 2024-03-08 22:19:38.451497
+Request method: GET
+Request URL: https://petstore.swagger.io/v2/pet/99
+
+Response code: 200
+Response text: {"id":99,"category":{"id":99,"name":"Elvis"},"name":"doggie","photoUrls":["null"],"tags":[{"id":78,"name":"Armi"}],"status":"available"}
+Response headers: {'Date': 'Fri, 08 Mar 2024 19:19:39 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT', 'Access-Control-Allow-Headers': 'Content-Type, api_key, Authorization', 'Server': 'Jetty(9.2.9.v20150224)'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_pet.py::Test_create_pet::test_create_new_pet (call)
+Time: 2024-03-08 22:19:39.051073
+Request method: DELETE
+Request URL: https://petstore.swagger.io/v2/pet/99
+
+Response code: 200
+Response text: {"code":200,"type":"unknown","message":"99"}
+Response headers: {'Date': 'Fri, 08 Mar 2024 19:19:39 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT', 'Access-Control-Allow-Headers': 'Content-Type, api_key, Authorization', 'Server': 'Jetty(9.2.9.v20150224)'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_pet.py::Test_create_pet::test_create_new_pet (call)
+Time: 2024-03-08 22:19:39.593632
+Request method: GET
+Request URL: https://petstore.swagger.io/v2/pet/99
+
+Response code: 404
+Response text: {"code":1,"type":"error","message":"Pet not found"}
+Response headers: {'Date': 'Fri, 08 Mar 2024 19:19:40 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT', 'Access-Control-Allow-Headers': 'Content-Type, api_key, Authorization', 'Server': 'Jetty(9.2.9.v20150224)'}
+Response cookies: {}
+
+-----
