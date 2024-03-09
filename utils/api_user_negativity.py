@@ -1,10 +1,10 @@
-from utils.http_methods import http_methods
+from utils.httpmethods import HttpMethods
 
 """Методы для тестирования api"""
 
 base_url = "https://petstore.swagger.io/v2/user"              # Базовая URL
 
-class User_negativ():
+class UserNegativ:
     # Подготовил несколько вариантов негативных сценариев , в действительности проверок может быть много, поэтому я сделаю три варианта
     """1. Отсутствие обязательного поля:
    - Удалить одно из обязательных полей (например, username или вообще все поля) и проверить,
@@ -17,7 +17,7 @@ class User_negativ():
         }
         post_resourse = "https://petstore.swagger.io/v2/user"
         print(post_resourse)
-        result_post = http_methods.post(post_resourse, json_for_create_new_user_negativ_1)
+        result_post = HttpMethods.post(post_resourse, json_for_create_new_user_negativ_1)
         print(result_post.text)
         return result_post
 
@@ -39,7 +39,7 @@ class User_negativ():
         }
         post_resourse = "https://petstore.swagger.io/v2/user"
         print(post_resourse)
-        result_post = http_methods.post(post_resourse, json_for_create_new_user_negativ_2)
+        result_post = HttpMethods.post(post_resourse, json_for_create_new_user_negativ_2)
         print(result_post.text)
         return result_post
 
@@ -61,7 +61,7 @@ class User_negativ():
         }
         post_resourse = "https://petstore.swagger.io/v2/user"
         print(post_resourse)
-        result_post = http_methods.post(post_resourse, json_for_create_new_user_negativ_3)
+        result_post = HttpMethods.post(post_resourse, json_for_create_new_user_negativ_3)
         print(result_post.text)
         return result_post
 
@@ -73,7 +73,7 @@ class User_negativ():
     def get_new_user_negativ_1():
         get_resourse = base_url + "/" + "Elvis28379712494239729"
         print(get_resourse)
-        result_get = http_methods.get(get_resourse)
+        result_get = HttpMethods.get(get_resourse)
         print(result_get.text)
         return result_get
 
@@ -85,7 +85,7 @@ class User_negativ():
     def get_new_user_negativ_2():
         get_resourse = base_url
         print(get_resourse)
-        result_get = http_methods.get(get_resourse)
+        result_get = HttpMethods.get(get_resourse)
         print(result_get.text)
         return result_get
 
@@ -97,7 +97,7 @@ class User_negativ():
     def get_new_user_negativ_3():
         get_resourse = base_url + "/" + "Elvis28379712494239729"
         print(get_resourse)
-        result_get = http_methods.get_negativ(get_resourse)
+        result_get = HttpMethods.get_negativ(get_resourse)
         print(result_get.text)
         return result_get
 
@@ -119,7 +119,7 @@ class User_negativ():
             "phone": "999999",
             "userStatus": 99
         }
-        result_delete = http_methods.delete(delete_resourse, json_for_delete_user)
+        result_delete = HttpMethods.delete(delete_resourse, json_for_delete_user)
         print(result_delete.text)
         return result_delete
 
@@ -141,7 +141,7 @@ class User_negativ():
             "phone": "999999",
             "userStatus": 99
         }
-        result_delete = http_methods.delete(delete_resourse, json_for_delete_user)
+        result_delete = HttpMethods.delete(delete_resourse, json_for_delete_user)
         print(result_delete.text)
         return result_delete
 

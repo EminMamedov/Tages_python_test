@@ -1,10 +1,10 @@
-from utils.http_methods import http_methods
+from utils.httpmethods import HttpMethods
 
 """Методы для тестирования api"""
 
 base_url = "https://petstore.swagger.io/v2/store/order"              # Базовая URL
 
-class Store_negativ():
+class StoreNegativ:
     # Подготовил несколько вариантов негативных сценариев , в действительности проверок может быть много, поэтому я сделаю три варианта
     """1. Отсутствие обязательного поля:
    - Удалить одно из обязательных полей (например, id или вообще все поля) и проверить,
@@ -17,7 +17,7 @@ class Store_negativ():
         }
         post_resourse = "https://petstore.swagger.io/v2/store/order"
         print(post_resourse)
-        result_post = http_methods.post(post_resourse, json_for_create_new_store_negativ_1)
+        result_post = HttpMethods.post(post_resourse, json_for_create_new_store_negativ_1)
         print(result_post.text)
         return result_post
 
@@ -37,7 +37,7 @@ class Store_negativ():
         }
         post_resourse = "https://petstore.swagger.io/v2/store/order"
         print(post_resourse)
-        result_post = http_methods.post(post_resourse, json_for_create_new_store_negativ_2)
+        result_post = HttpMethods.post(post_resourse, json_for_create_new_store_negativ_2)
         print(result_post.text)
         return result_post
 
@@ -55,7 +55,7 @@ class Store_negativ():
         }
         post_resourse = "https://petstore.swagger.io/v2/store/order"
         print(post_resourse)
-        result_post = http_methods.post(post_resourse, json_for_create_new_store_negativ_3)
+        result_post = HttpMethods.post(post_resourse, json_for_create_new_store_negativ_3)
         print(result_post.text)
         return result_post
 
@@ -67,7 +67,7 @@ class Store_negativ():
     def get_new_store_negativ_1():
         get_resourse = base_url + "/" + "999"
         print(get_resourse)
-        result_get = http_methods.get(get_resourse)
+        result_get = HttpMethods.get(get_resourse)
         print(result_get.text)
         return result_get
 
@@ -79,7 +79,7 @@ class Store_negativ():
     def get_new_store_negativ_2():
         get_resourse = base_url
         print(get_resourse)
-        result_get = http_methods.get(get_resourse)
+        result_get = HttpMethods.get(get_resourse)
         print(result_get.text)
         return result_get
 
@@ -91,7 +91,7 @@ class Store_negativ():
     def get_new_store_negativ_3():
         get_resourse = base_url + "/" + "99"
         print(get_resourse)
-        result_get = http_methods.get_negativ(get_resourse)
+        result_get = HttpMethods.get_negativ(get_resourse)
         print(result_get.text)
         return result_get
 
@@ -111,7 +111,7 @@ class Store_negativ():
           "status": "placed",
           "complete": True
         }
-        result_delete = http_methods.delete(delete_resourse, json_for_delete_store)
+        result_delete = HttpMethods.delete(delete_resourse, json_for_delete_store)
         print(result_delete.text)
         return result_delete
 
@@ -131,6 +131,6 @@ class Store_negativ():
           "status": "placed",
           "complete": True
 }
-        result_delete = http_methods.delete(delete_resourse, json_for_delete_store)
+        result_delete = HttpMethods.delete(delete_resourse, json_for_delete_store)
         print(result_delete.text)
         return result_delete

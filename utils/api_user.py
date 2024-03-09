@@ -1,10 +1,10 @@
-from utils.http_methods import http_methods
+from utils.httpmethods import HttpMethods
 
 """Методы для тестирования api"""
 
 base_url = "https://petstore.swagger.io/v2/user"              # Базовая URL
 
-class User():
+class User:
 
     """"Метод для создания user"""
     @staticmethod
@@ -21,7 +21,7 @@ class User():
 }
         post_resourse = "https://petstore.swagger.io/v2/user"
         print(post_resourse)
-        result_post = http_methods.post(post_resourse, json_for_create_new_user)
+        result_post = HttpMethods.post(post_resourse, json_for_create_new_user)
         print(result_post.text)
         return result_post
 
@@ -31,7 +31,7 @@ class User():
     def get_new_user():
         get_resourse = base_url + "/" + "Elvis"
         print(get_resourse)
-        result_get = http_methods.get(get_resourse)
+        result_get = HttpMethods.get(get_resourse)
         print(result_get.text)
         return result_get
 
@@ -51,6 +51,6 @@ class User():
           "phone": "999999",
           "userStatus": 99
 }
-        result_delete = http_methods.delete(delete_resourse, json_for_delete_user)
+        result_delete = HttpMethods.delete(delete_resourse, json_for_delete_user)
         print(result_delete.text)
         return result_delete

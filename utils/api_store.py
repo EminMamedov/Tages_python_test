@@ -1,10 +1,10 @@
-from utils.http_methods import http_methods
+from utils.httpmethods import HttpMethods
 
 """Методы для тестирования api"""
 
 base_url = "https://petstore.swagger.io/v2/store/order"              # Базовая URL
 
-class Store():
+class Store:
 
     """"Метод для создания store"""
     @staticmethod
@@ -19,7 +19,7 @@ class Store():
 }
         post_resourse = "https://petstore.swagger.io/v2/store/order"
         print(post_resourse)
-        result_post = http_methods.post(post_resourse, json_for_create_new_store)
+        result_post = HttpMethods.post(post_resourse, json_for_create_new_store)
         print(result_post.text)
         return result_post
 
@@ -29,7 +29,7 @@ class Store():
     def get_new_store(id):
         get_resourse = base_url + "/" + str(id)
         print(get_resourse)
-        result_get = http_methods.get(get_resourse)
+        result_get = HttpMethods.get(get_resourse)
         print(result_get.text)
         return result_get
 
@@ -47,6 +47,6 @@ class Store():
           "status": "placed",
           "complete": True
 }
-        result_delete = http_methods.delete(delete_resourse, json_for_delete_store)
+        result_delete = HttpMethods.delete(delete_resourse, json_for_delete_store)
         print(result_delete.text)
         return result_delete
